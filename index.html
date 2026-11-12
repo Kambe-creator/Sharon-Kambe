@@ -127,6 +127,27 @@ section{padding:88px 0}
 .tier.t3 li::before{background:var(--blush)}
 .tier.t3 .price{border-color:#A07487}
 @media(max-width:900px){.tiers{grid-template-columns:1fr}}
+.pack{margin-top:40px;border-radius:24px;background:var(--paper);border:2px solid var(--mauve);padding:32px;display:grid;grid-template-columns:1fr 1.2fr;gap:32px;align-items:center;position:relative}
+.pack .tags{display:flex;flex-wrap:wrap;gap:8px}
+.pack .tag{font-size:12px;letter-spacing:1.6px;text-transform:uppercase;font-weight:700;padding:6px 12px;border-radius:999px}
+.pack .tag.pop{background:var(--mauve);color:var(--glim)}
+.pack .tag.off{background:var(--melon);color:var(--ink)}
+.pack h3{font-size:27px;margin-top:14px}
+.pack .hand{font-size:28px;color:var(--lbl);line-height:1.1;margin-top:6px}
+.pack .opts{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pack .opt{background:var(--glim);border:1px solid var(--bor);border-radius:16px;padding:20px}
+.pack .opt.alt{background:var(--mauve);color:var(--glim);border-color:var(--mauve)}
+.pack .opt small{font-size:12px;letter-spacing:1.6px;text-transform:uppercase;font-weight:700;color:var(--lbl)}
+.pack .opt.alt small{color:var(--blush)}
+.pack .opt b{display:block;font-family:'Lora',serif;font-weight:500;font-size:21px;margin-top:6px}
+.pack .opt .p{font-family:'Lora',serif;font-size:30px;font-weight:600;margin-top:10px}
+.pack .opt .p span{font-family:'DM Sans',sans-serif;font-size:14px;font-weight:400}
+.pack .opt .s{font-size:14px;color:var(--grey)}
+.pack .opt.alt .s{color:var(--blush)}
+.pack ul{margin:14px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px;font-size:15px}
+.pack li{display:flex;gap:10px}.pack li::before{content:"";flex:none;width:7px;height:7px;border-radius:50%;background:var(--melon);margin-top:8px}
+@media(max-width:900px){.pack{grid-template-columns:1fr;padding:24px}}
+@media(max-width:480px){.pack .opts{grid-template-columns:1fr}}
 .note{margin-top:22px;background:var(--mist);border-radius:14px;padding:18px 20px;font-size:15px}
 .ages{width:100%;border-collapse:collapse;font-size:15.5px}
 .ages th{text-align:left;font-size:13px;border-bottom:1.5px solid var(--ink);padding:10px 12px 10px 0}
@@ -287,6 +308,20 @@ footer a{text-decoration:none}
         <ul><li>Four 90-minute sessions per week.</li><li>An initial assessment of your child's learning needs.</li><li>An individual learning plan.</li><li>A personalised pack of learning resources.</li><li>A weekly progress update.</li><li>A monthly meeting with the parent.</li><li>A report at the end of the programme.</li></ul>
         <div class="price"><b>KSh 45,000</b> per month</div></article>
     </div>
+
+    <article class="pack" id="family-pack" aria-labelledby="pack-title">
+      <div>
+        <div class="tags"><span class="tag pop">Most popular</span><span class="tag off">20% off</span></div>
+        <h3 id="pack-title">Family &amp; friends pack <span style="white-space:nowrap">· ages 7–9</span></h3>
+        <div class="hand">90-minute sessions, planned around your child.</div>
+        <ul><li>Reading fluency and comprehension.</li><li>Writing clear sentences.</li><li>Number skills and problem-solving.</li><li>French or English, through play.</li></ul>
+        <p style="margin-top:14px;font-size:14.5px;color:var(--grey)">Includes a first-session check-in, a practice plan, practice sheets and a short update after every session. Transport is charged separately.</p>
+      </div>
+      <div class="opts">
+        <div class="opt"><small>Option 1</small><b>Twice a week</b><div class="s">8 sessions · 12 hours a month</div><div class="p">KSh 12,800 <span>/ month</span></div><div class="s">KSh 1,600 per session</div></div>
+        <div class="opt alt"><small>Option 2</small><b>Three times a week</b><div class="s">12 sessions · 18 hours a month</div><div class="p">KSh 19,200 <span>/ month</span></div><div class="s">KSh 1,600 per session</div></div>
+      </div>
+    </article>
     <p class="note just"><i>Please note:</i> these sessions are designed to help children practise, understand and build confidence. If I notice something that may need further attention, I will discuss it with you and recommend an appropriate professional.</p>
 
     <div class="sechead" style="margin-top:72px"><div class="eyebrow">By age</div><h2>Learning experiences by age</h2><p class="just" style="color:var(--grey)">Children need different things at different stages. Here is how I adapt activities and sessions to suit their age and learning needs.</p></div>
