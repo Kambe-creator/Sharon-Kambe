@@ -167,6 +167,18 @@ section{padding:88px 0}
 .download .preview{display:flex;gap:16px;justify-content:center}
 .download .preview img{border-radius:12px;box-shadow:0 10px 30px rgba(58,42,51,.15);width:48%}
 @media(max-width:860px){.download .grid{grid-template-columns:1fr}}
+.testis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:stretch}
+.testi{margin:0;background:var(--glim);border:1px solid var(--bor);border-radius:20px;padding:28px 26px;display:flex;flex-direction:column;gap:16px}
+.testi .q{font-family:'Caveat',cursive;font-size:70px;line-height:.5;color:var(--melon);height:26px}
+.testi blockquote{margin:0;font-family:'Lora',serif;font-style:italic;font-size:18px;line-height:1.6}
+.testi figcaption{margin-top:auto;font-size:14.5px;color:var(--grey);line-height:1.5}
+.testi figcaption b{display:block;color:var(--ink);font-size:15.5px}
+.testi.letter{background:#FFFDF8;background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 33px,#E8DCD3 33px,#E8DCD3 34px);border-color:var(--mist);transform:rotate(-.6deg)}
+.testi.letter blockquote{font-family:'Caveat',cursive;font-style:normal;font-size:27px;line-height:34px;color:#2F3E7A}
+.testi.letter .sig{font-family:'Caveat',cursive;font-size:24px;color:#2F3E7A}
+.testi.letter .sig span{display:inline-block;width:90px;height:16px;border-radius:8px;background:#2F3E7A;filter:blur(5px);opacity:.55;vertical-align:middle;margin-left:6px}
+.testis-note{margin-top:18px;font-size:13.5px;color:var(--grey)}
+@media(max-width:900px){.testis{grid-template-columns:1fr}.testi.letter{transform:none}}
 .steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
 .step{background:var(--paper);border-radius:16px;padding:22px}
 .step .hand{font-size:40px;color:var(--lbl);line-height:1}
@@ -208,7 +220,7 @@ footer a{text-decoration:none}
       <a class="btn primary dl" href="assets/Sharon-Kambe-Rate-Card.pdf" download><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg><span>Rate card</span></a>
       <details class="menu">
         <summary aria-label="Open menu"><span></span><span></span><span></span></summary>
-        <nav class="drop" aria-label="Sections menu"><a href="#about">About</a><a href="#practice">My work</a><a href="#services">Services</a><a href="#support">Catch-up</a><a href="#booking">How it works</a><a href="#faq">FAQ</a><a href="#contact">Contact</a><a href="rate-card.html">Full rate card</a></nav>
+        <nav class="drop" aria-label="Sections menu"><a href="#about">About</a><a href="#practice">My work</a><a href="#services">Services</a><a href="#support">Catch-up</a><a href="#booking">How it works</a><a href="#faq">FAQ</a><a href="#contact">Contact</a><a href="#stories">Kind words</a><a href="rate-card.html">Full rate card</a></nav>
       </details>
     </div>
   </div>
@@ -369,6 +381,30 @@ footer a{text-decoration:none}
       </div>
     </div>
     <div class="preview"><img src="assets/rate-card-cover.png" alt="Cover of the rate card" loading="lazy"><img src="assets/Sharon-Kambe-One-Page-Card.png" alt="One-page rate card" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="services" id="stories" aria-labelledby="stories-title">
+  <div class="wrap">
+    <div class="sechead"><div class="eyebrow">Kind words</div><h2 id="stories-title">What families and learners say</h2><div class="hand">Every child, their own story.</div></div>
+    <div class="testis">
+      <figure class="testi">
+        <div class="q" aria-hidden="true">“</div>
+        <blockquote>Naledi doesn't warm up to just anyone. I was amazed at how well she got along with her teacher from the word go, even asking when she would come back. When we went to the coast, she had to buy a present for her teacher.</blockquote>
+        <figcaption><b>Naledi's grandmother</b>Naledi, 6, lives in South Africa and attends a French school (CP). She learned with me during a holiday in Kenya.</figcaption>
+      </figure>
+      <figure class="testi">
+        <div class="q" aria-hidden="true">“</div>
+        <blockquote>Learning with Teacher Sharon is so much fun. She always has toys to play with!</blockquote>
+        <figcaption><b>Fartun, learner</b>Fartun had never attended a formal school before our sessions.</figcaption>
+      </figure>
+      <figure class="testi letter">
+        <blockquote>Happy Teacher's Day, Teacher Sharon. You are the best teacher ever. You taught me how to express my feelings in a respectful way. God bless you.</blockquote>
+        <div class="sig" aria-label="Signed by the learner, name hidden">From<span></span></div>
+        <figcaption><b>A Grade 4 learner</b>From a Teacher's Day letter, Mukuru kwa Reuben, Nairobi.</figcaption>
+      </figure>
+    </div>
+    <p class="testis-note">Names have been changed or hidden to protect children's privacy.</p>
   </div>
 </section>
 
